@@ -1,0 +1,237 @@
+.read {
+  background-color: f9f9f9;
+}
+
+.read__inner {
+  padding: 112px 0; 
+}
+
+.read__header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.read__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.read__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 305px;
+  border: 1px solid #E4E4E2;
+  border-radius: 5px;
+  margin-right: 24px;
+}
+
+.read__picture {
+  margin-bottom: 21px;
+}
+
+.read__time {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+  margin-bottom: 2px;
+  margin-right: 22px;
+}
+
+.read__main {
+  padding-left: 30px;
+}
+
+.read__subheader {
+  width: 100%;
+  max-width: 182px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.read__desc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  width: 1005px;
+  max-width: 244px;
+  margin-bottom: 34px;
+}
+
+.read__link {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+  padding-bottom: 36px;
+  padding-left: 55px;
+  z-index: 3;
+
+  &::before {
+    position: absolute;
+    bottom: 36px;
+    left: 23px;
+    width: 23px;
+    height: 21px;
+    background-image: url("../../images/read/pet.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #E7F2A4;
+    transition: all 0.3s ease;
+    z-index: -2;
+  }
+
+
+  &:hover::after {
+    height: 30%;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+// ============== BIG ===================
+
+
+.big {
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 5px;
+  margin-right: 24px;
+}
+
+.big__picture {}
+
+.big__content {
+  position: relative;
+  margin-left: 31px;
+}
+
+.big__top {
+  width: 100%;
+  margin-bottom: 29px;
+  margin-top: 43px;
+}
+
+.big__link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #3D9CEA;
+  text-decoration: none;
+  margin-right: 7px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.big__time {
+  margin-left: 67px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #949494;
+}
+
+.big__header {
+  margin: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: #333333;
+  width: 100%;
+  max-width: 193px;
+  margin-bottom: 15px;
+}
+
+.big__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  width: 100%;
+  max-width: 270px;
+  margin-bottom: 37px;
+}
+
+.big__button {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+  margin-left: 31px;
+  z-index: 3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #E7F2A4;
+    transition: all 0.3s ease;
+    z-index: -2;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 0px;
+    left: -30px;
+    width: 23px;
+    height: 21px;
+    background-image: url("../../images/read/pet.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+  }
+
+  &:hover::after {
+    height: 30%;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

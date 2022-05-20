@@ -1,5 +1,6 @@
 .header {
   background: #F9F8F8;
+  border: 1px solid #F3F3F3;
 }
 
 .header__top {
@@ -130,7 +131,6 @@
 
 .header__bottom {
   background: #FFFFFF;
-  border: 1px solid #F3F3F3;
 }
 
 .header__bottom--inner {
@@ -169,7 +169,7 @@
 }
 
 .menu__link {
-  // position: relative;
+  position: relative;
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
@@ -180,18 +180,18 @@
   z-index: 3;
 
   &::after {
+    content: "";
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     right: 0;
     height: 0;
     background-color: #E7F2A4;
-    content: "";
-    z-index: 2;
     transition: all 0.3s ease;
+    z-index: -2;
   }
-
+  
   &:hover::after {
     height: 30%;
   }
@@ -203,8 +203,8 @@
 
 .menu__link--img::before {
   position: absolute;
-  top: 23px;
-  left: -12px;
+  top: 5px;
+  left: -29px;
   width: 20px;
   height: 15px;
   background-image: url("../../images/header/fish.svg");
@@ -218,8 +218,8 @@
 
   &::before {
     position: absolute;
-    top: 23px;
-    left: -12px;
+    top: -2px;
+    left: -32px;
     width: 23px;
     height: 23px;
     background-image: url("../../images/header/pet.svg");

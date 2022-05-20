@@ -33,7 +33,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  
+
   &:hover {
     opacity: 0.8;
   }
@@ -128,6 +128,9 @@
   display: flex;
   padding-top: 41px;
   padding-bottom: 41px;
+  background: #FFFFFF;
+  border-radius: 0px 5px 5px 5px;
+
 }
 
 .services__picture {
@@ -187,7 +190,7 @@
     background: rgba(255, 189, 84, 0.8);
     border-radius: 3px;
   }
-  
+
   &:active {
     background: rgba(255, 189, 84, 0.6);
     border-radius: 3px;
@@ -203,13 +206,13 @@
   border-radius: 3px;
   padding: 15px 37px;
   border: none;
-  
-  
+
+
   &:hover {
     background: rgba(51, 51, 51, 0.6);
     border-radius: 3px;
   }
-  
+
   &:active {
     background: rgba(51, 51, 51, 0.6);
     border-radius: 3px;

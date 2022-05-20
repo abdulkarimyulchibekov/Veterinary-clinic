@@ -17,6 +17,7 @@
   color: #333333;
   font-style: normal;
   margin-left: 281px;
+
   &::after {
     display: inline-block;
     position: absolute;
@@ -54,6 +55,14 @@
   line-height: 18px;
   color: #333333;
   text-decoration: none;
+
+  &:hover {
+    color: #FFBD54;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__link--tel::after {
@@ -137,6 +146,7 @@
 .header__nav {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .header__menu {
@@ -150,23 +160,73 @@
   margin-left: 135px;
 }
 
+.menu__item {
+  position: relative;
+}
 
 .menu__item:first-child {
   margin-left: 149px;
 }
 
 .menu__link {
+  // position: relative;
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
   text-decoration: none;
-  margin: 20px; 
+  margin: 20px;
+  z-index: 3;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #E7F2A4;
+    content: "";
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::after {
+    height: 30%;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.menu__link--img::before {
+  position: absolute;
+  top: 23px;
+  left: -12px;
+  width: 20px;
+  height: 15px;
+  background-image: url("../../images/header/fish.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
 }
 
 .menu__link--active {
   margin-right: 65px;
+
+  &::before {
+    position: absolute;
+    top: 23px;
+    left: -12px;
+    width: 23px;
+    height: 23px;
+    background-image: url("../../images/header/pet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
 }
 
 .menu__item--active {

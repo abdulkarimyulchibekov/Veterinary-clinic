@@ -59,7 +59,7 @@
 						<nav class="header__nav">
 							<ul class="header__menu menu">
 								<li class="menu__item">
-									<a href="./index.html" class="menu__link">
+									<a href="./index.html" class="menu__link menu__link--img">
 										Главная
 									</a>
 								</li>
@@ -226,17 +226,61 @@
 						</div>
 
 						<div class="services__main">
-							<picture>
+							<picture class="services__picture">
 								<source
 								type="image/webp"
 								srcset="./images/services/serv__img.webp 1x, ./images/services/serv__img@2x.webp 2x"
-								
 								/>
-
 								<img src="./images/services/serv__img.png" alt="picture of a cat being treated" srcset="./images/services/serv__img.png 1x, ./images/services/serv__img@2x.png 2x"
 								width="524" height="329">
 							</picture>
+
+							<div class="services__text">
+								<h3 class="services__title">
+									Первичный осмотр
+								</h3>
+
+								<p class="services__desc">
+									По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.
+								</p>
+
+								<p class="services__desc2">
+									По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.
+								</p>
+
+								<div class="services__buttons">
+									<button class="services__button1">
+										<img src="./images/services/money.svg" alt="picture of money">
+										Узнать цену
+									</button>
+
+									<button class="services__button2">
+										<img src="./images/services/pen.svg" alt="picture of pen and paper">
+										Записаться на приём
+									</button>
+								</div>
+							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="site-subscribe">
+			<div class="subscribe">
+				<div class="container">
+					<div class="subscribe__inner">
+						<h2 class="subscribe__header">
+							Будь в курсе событий
+						</h2>
+
+						<form action="https://echo.htmlacademy.ru/courses" method="post" class="subscribe__form">
+							<input type="email" name="user__email" placeholder="Укажите Ваш email адрес" aria-label="Укажите Ваш email адрес" class="subscribe__input">
+
+							<button type="submit" class="subscribe__button">
+								Подписаться
+							</button>
+						</form>
 					</div>
 				</div>
 			</div>

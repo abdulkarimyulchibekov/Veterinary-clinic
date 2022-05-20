@@ -1,9 +1,9 @@
 .hero {
   background-image: url("../../images/hero-left-bgi.png"),
-  url("../../images/hero-right-bgi.png");
+    url("../../images/hero-right-bgi.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 490px) calc(50% - 70px),
-  calc(50% + 685px) calc(50% + 200px);
+    calc(50% + 685px) calc(50% + 200px);
 }
 
 .hero__inner {
@@ -55,4 +55,14 @@
   color: #FFFFFF;
   text-decoration: none;
   padding: 16px 48px;
+
+  &:hover {
+    background: rgba(51, 51, 51, 0.8);
+    border-radius: 3px;
+  }
+
+  &:active {
+    background: rgba(51, 51, 51, 0.6);
+    border-radius: 3px;
+  }
 }
